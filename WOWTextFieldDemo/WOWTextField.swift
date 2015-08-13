@@ -13,6 +13,13 @@ import UIKit
 @IBDesignable public class WOWTextField: UITextField {
     
     // MARK: inspectable variables
+    @IBInspectable public var borderColor: UIColor? {
+        didSet {
+            updateForeground()
+        }
+    }
+    
+    @IBInspectable public var borderWidth: CGFloat = 1
     @IBInspectable public var placeholderColor: UIColor? {
         didSet {
             updatePlaceholder()
@@ -122,8 +129,8 @@ import UIKit
         foregroundView.layer.transform = rotationAndPerspectiveTransformForView(foregroundView)
         foregroundView.backgroundColor = foregroundColor
         foregroundView.layer.cornerRadius = cornerRadius
-        foregroundView.layer.borderWidth = 1
-        foregroundView.layer.borderColor = UIColor.yellowColor().CGColor
+        foregroundView.layer.borderWidth = borderWidth
+        foregroundView.layer.borderColor = borderColor?.CGColor
         
         foregroundLayer.borderWidth = borderThickness
         foregroundLayer.borderColor = colorWithBrightnessFactor(foregroundColor, factor: 0.8).CGColor
