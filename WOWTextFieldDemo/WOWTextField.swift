@@ -141,8 +141,8 @@ import UIKit
         foregroundView.layer.transform = rotationAndPerspectiveTransformForView(foregroundView)
         foregroundView.backgroundColor = foregroundColor
         foregroundView.layer.cornerRadius = cornerRadius
-        foregroundView.layer.borderWidth = foregroundBorderWidth
-        foregroundView.layer.borderColor = foregroundBorderColor.CGColor
+        foregroundView.layer.borderWidth = borderWidth
+        foregroundView.layer.borderColor = borderColor?.CGColor
         
         foregroundLayer.borderWidth = borderThickness
         foregroundLayer.borderColor = colorWithBrightnessFactor(foregroundColor, factor: 0.8).CGColor
@@ -204,7 +204,7 @@ import UIKit
     func animateViewsForTextEntry() {
         UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.6, options: UIViewAnimationOptions.BeginFromCurrentState, animations: { () -> Void in
         
-                self.placeholderLabel.frame.origin = CGPoint(x: self.placeholderInsets.x, y: self.bounds.height - self.placeholderLabel.frame.height)
+                self.placeholderLabel.frame.origin = CGPoint(x: self.placeholderInsets.x, y: self.bounds.height - self.placeholderLabel.frame.height + 2)
             
                 self.foregroundView.layer.transform = CATransform3DIdentity
             
