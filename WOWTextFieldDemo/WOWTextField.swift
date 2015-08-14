@@ -13,6 +13,13 @@ import UIKit
 @IBDesignable public class WOWTextField: UITextField {
     
     // MARK: inspectable variables
+    @IBInspectable public var borderColor: UIColor? {
+        didSet {
+            updateForeground()
+        }
+    }
+    
+    @IBInspectable public var borderWidth: CGFloat = 1
     @IBInspectable public var placeholderColor: UIColor? {
         didSet {
             updatePlaceholder()
