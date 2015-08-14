@@ -24,8 +24,20 @@ import UIKit
             updateForeground()
         }
     }
+
+    @IBInspectable public var foregroundBorderColor: UIColor = UIColor.blackColor() {
+        didSet {
+            updateForeground()
+        }
+    }
     
     @IBInspectable public var borderThickness: CGFloat = 1 {
+        didSet {
+            updateForeground()
+        }
+    }
+
+    @IBInspectable public var foregroundBorderWidth: CGFloat = 0 {
         didSet {
             updateForeground()
         }
@@ -122,8 +134,8 @@ import UIKit
         foregroundView.layer.transform = rotationAndPerspectiveTransformForView(foregroundView)
         foregroundView.backgroundColor = foregroundColor
         foregroundView.layer.cornerRadius = cornerRadius
-        foregroundView.layer.borderWidth = 1
-        foregroundView.layer.borderColor = UIColor.yellowColor().CGColor
+        foregroundView.layer.borderWidth = foregroundBorderWidth
+        foregroundView.layer.borderColor = foregroundBorderColor.CGColor
         
         foregroundLayer.borderWidth = borderThickness
         foregroundLayer.borderColor = colorWithBrightnessFactor(foregroundColor, factor: 0.8).CGColor
