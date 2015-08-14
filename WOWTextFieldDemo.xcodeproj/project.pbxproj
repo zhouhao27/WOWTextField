@@ -15,6 +15,7 @@
 		38A3D8401B7B15190008EFA2 /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3D83F1B7B15190008EFA2 /* TextFieldsEffects.swift */; };
 		38A3D8421B7B15630008EFA2 /* WOWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3D8411B7B15630008EFA2 /* WOWTextField.swift */; };
 		38A3D8441B7B1E910008EFA2 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A3D8431B7B1E910008EFA2 /* JiroTextField.swift */; };
+		38BE77F01B7DC99700F76D9C /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 38BE77EF1B7DC99700F76D9C /* todo.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		38A3D83F1B7B15190008EFA2 /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
 		38A3D8411B7B15630008EFA2 /* WOWTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOWTextField.swift; sourceTree = "<group>"; };
 		38A3D8431B7B1E910008EFA2 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		38BE77EF1B7DC99700F76D9C /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				38A3D8341B7B15010008EFA2 /* Assets.xcassets */,
 				38A3D8361B7B15010008EFA2 /* LaunchScreen.storyboard */,
 				38A3D8391B7B15010008EFA2 /* Info.plist */,
+				38BE77EF1B7DC99700F76D9C /* todo.txt */,
 			);
 			path = WOWTextFieldDemo;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BE77F01B7DC99700F76D9C /* todo.txt in Resources */,
 				38A3D8381B7B15010008EFA2 /* LaunchScreen.storyboard in Resources */,
 				38A3D8351B7B15010008EFA2 /* Assets.xcassets in Resources */,
 				38A3D8331B7B15010008EFA2 /* Main.storyboard in Resources */,
@@ -295,6 +299,7 @@
 				38A3D83E1B7B15010008EFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
