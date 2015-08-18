@@ -84,9 +84,12 @@ import UIKit
         drawViewsForRect(frame)
     }
     
-    override public func drawRect(rect: CGRect) {
-        drawViewsForRect(rect)
+    public override func awakeFromNib() {
+        drawViewsForRect(frame)
     }
+//    override public func drawRect(rect: CGRect) {
+//        drawViewsForRect(rect)
+//    }
     
     override public func drawPlaceholderInRect(rect: CGRect) {
         // Don't draw any placeholders
