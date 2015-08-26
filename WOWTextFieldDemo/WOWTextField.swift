@@ -87,10 +87,7 @@ import UIKit
     public override func awakeFromNib() {
         drawViewsForRect(frame)
     }
-//    override public func drawRect(rect: CGRect) {
-//        drawViewsForRect(rect)
-//    }
-    
+
     override public func drawPlaceholderInRect(rect: CGRect) {
         // Don't draw any placeholders
     }
@@ -107,7 +104,6 @@ import UIKit
     }
     
     // MARK: - UITextField Observing
-    
     override public func willMoveToSuperview(newSuperview: UIView!) {
         if newSuperview != nil {
             NSNotificationCenter.defaultCenter().addObserver(self, selector: "textFieldDidEndEditing", name:UITextFieldTextDidEndEditingNotification, object: self)
